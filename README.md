@@ -129,24 +129,35 @@ The PCB was designed as a **double-sided board** to integrate the electronics wi
 ### Top Layer
 
 <p align="center">
-  <img src="hardware/pcb/pcb_top.png" width="700">
+  <img src="hardware/pcb/pcb_top.png" width="700" alt="Micromouse PCB top layer">
 </p>
 
 ### Bottom Layer
 
 <p align="center">
-  <img src="hardware/pcb/pcb_bottom.png" width="700">
+  <img src="hardware/pcb/pcb_bottom.png" width="700" alt="Micromouse PCB bottom layer">
 </p>
 
 The repository also contains the fabrication Gerbers and PCB layout PDF.
+
+### 3D PCB Visualization
+
+3D renders were used to verify component placement, connector accessibility, board geometry, and the overall arrangement before physical integration.
+
+<p align="center">
+  <img src="hardware/pcb/renders/pcb_3d_render_red.png" width="48%" alt="Micromouse PCB 3D render">
+  <img src="hardware/pcb/renders/pcb_3d_render_purple.png" width="48%" alt="Micromouse PCB alternate 3D render">
+</p>
+
+These views provide a clearer representation of the assembled PCB and the spatial relationship between the ESP32-S2 Mini, power circuitry, sensor interfaces, motor connections, and auxiliary modules.
 
 ## PCB Fabrication
 
 The board was physically fabricated using a manual double-sided PCB process.
 
 <p align="center">
-  <img src="docs/images/pcb_fabrication_side_a.jpg" width="45%">
-  <img src="docs/images/pcb_fabrication_side_b.jpg" width="45%">
+  <img src="docs/images/pcb_fabrication_side_a.jpg" width="45%" alt="Micromouse PCB fabrication side A">
+  <img src="docs/images/pcb_fabrication_side_b.jpg" width="45%" alt="Micromouse PCB fabrication side B">
 </p>
 
 These images show both copper layers before component assembly.
@@ -156,25 +167,35 @@ These images show both copper layers before component assembly.
 After fabrication, the electronic components, connectors, sensing elements and controller were assembled onto the board.
 
 <p align="center">
-  <img src="docs/images/pcb_assembled_top.jpg" width="45%">
-  <img src="docs/images/pcb_assembled_bottom.jpg" width="45%">
+  <img src="docs/images/pcb_assembled_top.jpg" width="45%" alt="Micromouse assembled PCB top">
+  <img src="docs/images/pcb_assembled_bottom.jpg" width="45%" alt="Micromouse assembled PCB bottom">
 </p>
 
 The assembled prototype includes the ESP32-S2 Mini, power interface, sensor circuitry and connections required for the motors and remaining subsystems.
 
 ## Robot Integration
 
-The custom PCB was then integrated with the mechanical structure, motors, encoders and battery system.
+The custom PCB was designed not only as an electronic board, but as the central integration platform for the complete Micromouse system.
+
+### 3D System Integration
 
 <p align="center">
-  <img src="docs/images/micromouse_prototype.jpg" width="45%">
-  <img src="docs/images/micromouse_integrated.jpg" width="45%">
+  <img src="hardware/pcb/renders/micromouse_3d_assembly.png" width="700" alt="ESP32-S2 Micromouse complete 3D assembly">
+</p>
+
+The complete 3D assembly illustrates how the PCB, ESP32-S2 Mini, infrared sensing elements, motors, wheels, connectors, and mechanical geometry were integrated into a compact robotic platform.
+
+### Physical Prototype
+
+<p align="center">
+  <img src="docs/images/micromouse_prototype.jpg" width="45%" alt="Micromouse prototype">
+  <img src="docs/images/micromouse_integrated.jpg" width="45%" alt="Micromouse integrated hardware">
 </p>
 
 ### Final Hardware Integration
 
 <p align="center">
-  <img src="docs/images/micromouse_final_hardware.jpg" width="600">
+  <img src="docs/images/micromouse_final_hardware.jpg" width="600" alt="Final ESP32-S2 Micromouse hardware">
 </p>
 
 ## Repository Structure
